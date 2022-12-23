@@ -184,10 +184,15 @@
                 </div>
             </div>
             <form action="">
-                <input type="text" placeholder="Name" class="box">
-                <input type="email" placeholder="Email" class="box">
-                <input type="text" placeholder="Project" class="box">
-                <textarea name="" id="" cols="30" rows="10" class="box message"></textarea>
+                <input type="text" placeholder="Name" class="box"
+                 title="Enter your real name" pattern="[A-Za-z]{2,}.[A-Za-z]{2,}" required>
+                <input type="email" placeholder="Email" class="box"
+                 pattern="[a-z0-9._%+-]+@(gmail|icloud|hotmail)\.[A-Za-z]{2,}"
+                 title="only gmail, icoud or hotmail " required>
+                <input type="tel" placeholder="phone" class="box"
+                 title="Your phone number" pattern="[0-9]{10}" maxlength="10" required >
+                <textarea name="" id="" cols="30" rows="10" class="box message"
+                title="Should be 10 words at least"  required></textarea>
                 <button type="submit" class="btn">
                     <i class="fas fa-paper-plane"></i>
                 </button>
