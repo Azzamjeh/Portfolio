@@ -288,6 +288,7 @@ header .navbar ul li a:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 .contact .row .content {
     flex: 1 1 30rem;
