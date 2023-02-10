@@ -28,7 +28,6 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -67,20 +66,28 @@
 
             <div class="counter">
                 <div class="box">
-                    <span>9+</span>
+                    <span>7+</span>
                     <h3>Programming languages courses</h3>
                 </div>
                 <div class="box">
-                    <span></span>
+                    <span>+10</span>
                     <h3>Projects</h3>
                 </div>
                 <div class="box">
-                    <span>220+</span>
-                    <h3>Happy Clients</h3>
+                    <span>Soft Skilss</span>
+                    <h3>Coummunication
+                        Leadership
+                        Teamwork
+                        Time Managment
+                    </h3>
                 </div>
                 <div class="box">
-                    <span>35+</span>
-                    <h3>Awards Won</h3>
+                    <span>Hard Skills</span>
+                    <h3>Typing Speed
+                        Certificate
+                        Computer Programming 
+                        Adope
+                    </h3>
                 </div>
             </div>
         </div>
@@ -118,34 +125,6 @@
 
     <!-- Education Section Ends -->
 
-    <!-- Portfolio Section Starts -->
-
-    <section class="portfolio" id="portfolio">
-        <h1 class="heading">My
-            <span>Portfolio</span>
-        </h1>
-
-        <div class="box-container">
-            <div class="box">
-                <img src="images/1.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="images/2.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="images/3.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="images/4.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="images/5.jpg" alt="">
-            </div>
-            
-        </div>
-    </section>
-
-    <!-- Portfolio Section Ends -->
 
     <!-- Contact Section Starts -->
 
@@ -163,16 +142,22 @@
                     <h3><i class="fas fa-map-marker-alt"></i>Yala, Thai</h3>
                 </div>
             </div>
-            <form action="">
-                <input type="text" placeholder="Name" class="box"
-                 title="Enter your real name" pattern="[A-Za-z]{2,}.[A-Za-z]{2,}" required>
+
+            <form action="action.php" method="post">
+
+                <input type="text" placeholder="Name" class="box" title="Enter your real name"
+                  id="name" name="name"  pattern="[A-Za-z]{2,}.[A-Za-z]{2,}" required>
+
                 <input type="email" placeholder="Email" class="box"
-                 pattern="[a-z0-9._%+-]+@(gmail|icloud|hotmail)\.[A-Za-z]{2,}"
-                 title="only gmail, icoud or hotmail " required>
-                <input type="tel" placeholder="phone" class="box"
-                 title="Your phone number" pattern="[0-9]{10}" maxlength="10" required >
-                <textarea name="" id="" cols="30" rows="10" class="box message"
-                title="Should be 10 words at least"  required></textarea>
+                  id="email" name="email"  pattern="[a-z0-9._%+-]+@(gmail|icloud|hotmail)\.[A-Za-z]{2,}"
+                   title="only gmail, icoud or hotmail "required>
+
+                <input type="tel" placeholder="phone" class="box" title="Your phone number" pattern="[0-9]{10}"
+                  id="phone" name="phone"  maxlength="10" required>
+
+                <textarea name="message" id="message" cols="30" rows="10" class="box message" placeholder="message"
+                    title="Should be 10 words at least" required></textarea>
+
                 <button type="submit" class="btn">
                     <i class="fas fa-paper-plane"></i>
                 </button>
