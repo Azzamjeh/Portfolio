@@ -1,3 +1,13 @@
+<?php 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +19,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+	
+	<style>
+
+	.profile{
+	color: var(--color);
+    text-transform: uppercase;
+    font-weight: 600;
+	font-size:30px;
+	text-align:center;
+	margin-top:;
+	}
+</style>
 
 </head>
 <body>
-    
+
+
+<h1 class="profile">Hello, <?php echo $user_data['user_name']; ?></h1>
     <!-- Header Section Starts -->
 
     <header>
@@ -28,18 +52,21 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
-               <!-- <li><a href="#portfolio">Portfolio</a></li>-->
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="./Classes/login.php">Login</a></li>
+                <li><a href="logout.php">Logout</a><li>
+				
 
                 
             </ul>
         </nav>
     </header>
 
+	
+
     <!-- Header Section Ends -->
 
     <div id="menu" class="fa fa-bars"></div>
+	
 
     <!-- Home Section Starts -->
 
@@ -132,34 +159,6 @@
     </section>
 
     <!-- Education Section Ends -->
-
-<!-- Portfolio Section Starts -->
-<!--
-<section class="portfolio" id="portfolio">
-    <h1 class="heading">My
-        <span>Portfolio</span>
-    </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="img/it.department.png" alt="">
-        </div>
-        <div class="box">
-            <img src="img/university.web.png" alt="">
-        </div>
-        <div class="box">
-            <img src="img/portfolio.me.png" alt="">
-        </div>
-        <div class="box">
-            <img src="img/moviz.png" alt="">
-        </div>
-
-    </div>
-</section>
--->
-<!-- Portfolio Section Ends -->
-    
 
 
     <!-- Contact Section Starts -->
